@@ -1,0 +1,477 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A2B647DB-AC46-4DB5-8239-1A340EF267CD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarSparePart</RootNamespace>
+    <AssemblyName>CarSparePart</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddtoCart.aspx" />
+    <Content Include="CarImages\Alcazar.jpeg" />
+    <Content Include="CarImages\Astor.jpeg" />
+    <Content Include="CarImages\Bolero.jpeg" />
+    <Content Include="CarImages\Brezza.jpeg" />
+    <Content Include="CarImages\CamryCar.jpeg" />
+    <Content Include="CarImages\Carens.jpeg" />
+    <Content Include="CarImages\Ciaz.jpeg" />
+    <Content Include="CarImages\Creta.jpeg" />
+    <Content Include="CarImages\Ertiga.jpeg" />
+    <Content Include="CarImages\Fortuner.jpeg" />
+    <Content Include="CarImages\GlanzaCar.jpeg" />
+    <Content Include="CarImages\Gloster.jpeg" />
+    <Content Include="CarImages\Harrier.jpeg" />
+    <Content Include="CarImages\Hector.jpeg" />
+    <Content Include="CarImages\Hilux.jpeg" />
+    <Content Include="CarImages\HyundaiLogo.jpeg" />
+    <Content Include="CarImages\i10.jpeg" />
+    <Content Include="CarImages\i20.jpeg" />
+    <Content Include="CarImages\InnovaCrystaCar.jpeg" />
+    <Content Include="CarImages\KiaLogo.jpeg" />
+    <Content Include="CarImages\Kodiaq.jpeg" />
+    <Content Include="CarImages\Kushaq.jpeg" />
+    <Content Include="CarImages\MahindraLogo.png" />
+    <Content Include="CarImages\MGLogo.jpeg" />
+    <Content Include="CarImages\NexonCar.jpeg" />
+    <Content Include="CarImages\Octavia.jpeg" />
+    <Content Include="CarImages\PunchCar.jpeg" />
+    <Content Include="CarImages\Safari.jpeg" />
+    <Content Include="CarImages\Scorpio.jpeg" />
+    <Content Include="CarImages\Scross.jpeg" />
+    <Content Include="CarImages\Seltos.jpeg" />
+    <Content Include="CarImages\SkodaLogo.png" />
+    <Content Include="CarImages\Slavia.jpeg" />
+    <Content Include="CarImages\Sonet.jpeg" />
+    <Content Include="CarImages\Superb.jpeg" />
+    <Content Include="CarImages\SuzukiLogo.jpeg" />
+    <Content Include="CarImages\Swift.jpeg" />
+    <Content Include="CarImages\Thar.jpeg" />
+    <Content Include="CarImages\TiagoCar.jpeg" />
+    <Content Include="CarImages\TigorCar.jpeg" />
+    <Content Include="CarImages\Tuv300.jpeg" />
+    <Content Include="CarImages\UrbanCruiserCar.jpeg" />
+    <Content Include="CarImages\Venue.jpeg" />
+    <Content Include="CarImages\Verna.jpeg" />
+    <Content Include="CarImages\XL6.jpeg" />
+    <Content Include="CarImages\Xuv300.jpeg" />
+    <Content Include="CarImages\Xuv700.jpeg" />
+    <Content Include="EndeavourParts.aspx" />
+    <Content Include="FordCarList.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="HyundaiCarList.aspx" />
+    <Content Include="HyundaiParts.aspx" />
+    <Content Include="HyundaiParts\AirFilter.jpeg" />
+    <Content Include="HyundaiParts\ClutchPlate.jpeg" />
+    <Content Include="HyundaiParts\FrantBrakePads.jpeg" />
+    <Content Include="HyundaiParts\FrontDiscBrake.jpeg" />
+    <Content Include="HyundaiParts\FuelFilter.jpeg" />
+    <Content Include="HyundaiParts\Horn.jpeg" />
+    <Content Include="HyundaiParts\OilFilter.jpeg" />
+    <Content Include="HyundaiParts\Radiator.jpg" />
+    <Content Include="HyundaiParts\RearBrakePads.jpeg" />
+    <Content Include="HyundaiParts\RearDiscBrake.jpeg" />
+    <Content Include="HyundaiParts\ShockAbsorber.jpeg" />
+    <Content Include="HyundaiParts\WiperBlades.jpeg" />
+    <Content Include="images\1.jpeg" />
+    <Content Include="images\2.jpeg" />
+    <Content Include="images\3.jpeg" />
+    <Content Include="images\4.jpeg" />
+    <Content Include="images\5.jpeg" />
+    <Content Include="images\AdminBanner.jpeg" />
+    <Content Include="images\air filter.jpeg" />
+    <Content Include="images\AspireCar.jpeg" />
+    <Content Include="images\CardDetailsBanner.jpeg" />
+    <Content Include="images\CartButton.jpeg" />
+    <Content Include="images\CartLogo.jpeg" />
+    <Content Include="images\DiscBrakeFront.jpeg" />
+    <Content Include="images\DiscBrakeRear.jpg" />
+    <Content Include="images\Ecosport.jpeg" />
+    <Content Include="images\EndeavourCar.jpeg" />
+    <Content Include="images\FaceBookLogo.png" />
+    <Content Include="images\FordLogo.jpeg" />
+    <Content Include="images\FrontBrakePads.jpg" />
+    <Content Include="images\Fuel Filter.jpg" />
+    <Content Include="images\Horn.jpeg" />
+    <Content Include="images\InstaLogo.jpeg" />
+    <Content Include="images\lock.jpeg" />
+    <Content Include="images\LoginBackground.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\oil filter.jpeg" />
+    <Content Include="images\RearBrakePads.jpeg" />
+    <Content Include="images\ShockAbsorber.jpeg" />
+    <Content Include="images\TataLogo.png" />
+    <Content Include="images\ToyotaLogo.jpeg" />
+    <Content Include="images\TweeterLogo.png" />
+    <Content Include="images\wiper.jpeg" />
+    <Content Include="KiaCarList.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Login1.css" />
+    <Content Include="MahindraCarList.aspx" />
+    <Content Include="MahindraParts.aspx" />
+    <Content Include="MahindraParts\AirFilter.jpeg" />
+    <Content Include="MahindraParts\ClutchPlate.jpeg" />
+    <Content Include="MahindraParts\FrontBrakePads.jpeg" />
+    <Content Include="MahindraParts\FrontDiscBrake.jpeg" />
+    <Content Include="MahindraParts\FuelFilter.jpeg" />
+    <Content Include="MahindraParts\Horn.jpeg" />
+    <Content Include="MahindraParts\OilFilter.jpeg" />
+    <Content Include="MahindraParts\Radiator.jpeg" />
+    <Content Include="MahindraParts\RearBrakePads.jpeg" />
+    <Content Include="MahindraParts\RearDiscBrake.jpeg" />
+    <Content Include="MahindraParts\ShockAbsorber.jpeg" />
+    <Content Include="MahindraParts\Wipers.jpeg" />
+    <Content Include="Main.aspx" />
+    <Content Include="Main.css" />
+    <Content Include="MGCarList.aspx" />
+    <Content Include="PaymentDetails.aspx" />
+    <Content Include="PlaceOrder.aspx" />
+    <Content Include="ShowOrders.aspx" />
+    <Content Include="SkodaCarList.aspx" />
+    <Content Include="SkodaParts.aspx" />
+    <Content Include="SkodaParts\AirFilter.jpeg" />
+    <Content Include="SkodaParts\ClutchPlate.jpeg" />
+    <Content Include="SkodaParts\FrontBrakePads.jpeg" />
+    <Content Include="SkodaParts\FrontDiscBrake.jpeg" />
+    <Content Include="SkodaParts\FuelFilter.jpeg" />
+    <Content Include="SkodaParts\Horn.jpeg" />
+    <Content Include="SkodaParts\OilFilter.jpeg" />
+    <Content Include="SkodaParts\Radiator.jpeg" />
+    <Content Include="SkodaParts\RearBrakePads.jpeg" />
+    <Content Include="SkodaParts\RearDiscBrake.jpeg" />
+    <Content Include="SkodaParts\ShockAbsorber.jpeg" />
+    <Content Include="SkodaParts\Wipers.jpeg" />
+    <Content Include="SuzukiCarList.aspx" />
+    <Content Include="SuzukiParts.aspx" />
+    <Content Include="SuzukiParts\AirFilter.jpg" />
+    <Content Include="SuzukiParts\ClutchPlate.jpeg" />
+    <Content Include="SuzukiParts\FrontBrakePads.jpeg" />
+    <Content Include="SuzukiParts\FrontDiscBrake.jpeg" />
+    <Content Include="SuzukiParts\FuelFilter.jpeg" />
+    <Content Include="SuzukiParts\Horn.jpeg" />
+    <Content Include="SuzukiParts\OilFilter.jpeg" />
+    <Content Include="SuzukiParts\Radiator.jpeg" />
+    <Content Include="SuzukiParts\RearBrakePads.jpeg" />
+    <Content Include="SuzukiParts\RearDiscBrake.jpeg" />
+    <Content Include="SuzukiParts\ShockAbsorber.jpg" />
+    <Content Include="SuzukiParts\Wipers.jpg" />
+    <Content Include="TatacarList.aspx" />
+    <Content Include="TataParts.aspx" />
+    <Content Include="TataParts\AirFilter.jpeg" />
+    <Content Include="TataParts\ClutchPlate.jpeg" />
+    <Content Include="TataParts\FrontBrakePads.jpeg" />
+    <Content Include="TataParts\FrontDiscBrake.jpg" />
+    <Content Include="TataParts\FuelFilter.jpeg" />
+    <Content Include="TataParts\Horn.jpeg" />
+    <Content Include="TataParts\OilFilter.jpeg" />
+    <Content Include="TataParts\Radiator.jpeg" />
+    <Content Include="TataParts\RearBrakePads.jpeg" />
+    <Content Include="TataParts\RearDiscBrake.jpeg" />
+    <Content Include="TataParts\ShockAbsorber.jpg" />
+    <Content Include="TataParts\Wipers.jpeg" />
+    <Content Include="ToyotaCarList.aspx" />
+    <Content Include="ToyotaCarParts.aspx" />
+    <Content Include="ToyotaParts\AirFilter.jpeg" />
+    <Content Include="ToyotaParts\ClutchPlate.jpeg" />
+    <Content Include="ToyotaParts\FrontBrakeDisc.jpg" />
+    <Content Include="ToyotaParts\FrontBrakePads.jpeg" />
+    <Content Include="ToyotaParts\FuelFilter.jpeg" />
+    <Content Include="ToyotaParts\Horn.jpeg" />
+    <Content Include="ToyotaParts\OilFilter.jpeg" />
+    <Content Include="ToyotaParts\Radiator.jpeg" />
+    <Content Include="ToyotaParts\RearBrakeDisc.jpg" />
+    <Content Include="ToyotaParts\RearBrakePads.jpeg" />
+    <Content Include="ToyotaParts\ShockAbsorber.jpeg" />
+    <Content Include="ToyotaParts\WiperBlades.jpeg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddtoCart.aspx.cs">
+      <DependentUpon>AddtoCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddtoCart.aspx.designer.cs">
+      <DependentUpon>AddtoCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EndeavourParts.aspx.cs">
+      <DependentUpon>EndeavourParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EndeavourParts.aspx.designer.cs">
+      <DependentUpon>EndeavourParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FordCarList.aspx.cs">
+      <DependentUpon>FordCarList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FordCarList.aspx.designer.cs">
+      <DependentUpon>FordCarList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HyundaiCarList.aspx.cs">
+      <DependentUpon>HyundaiCarList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HyundaiCarList.aspx.designer.cs">
+      <DependentUpon>HyundaiCarList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HyundaiParts.aspx.cs">
+      <DependentUpon>HyundaiParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HyundaiParts.aspx.designer.cs">
+      <DependentUpon>HyundaiParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KiaCarList.aspx.cs">
+      <DependentUpon>KiaCarList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KiaCarList.aspx.designer.cs">
+      <DependentUpon>KiaCarList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MahindraCarList.aspx.cs">
+      <DependentUpon>MahindraCarList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MahindraCarList.aspx.designer.cs">
+      <DependentUpon>MahindraCarList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MahindraParts.aspx.cs">
+      <DependentUpon>MahindraParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MahindraParts.aspx.designer.cs">
+      <DependentUpon>MahindraParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MGCarList.aspx.cs">
+      <DependentUpon>MGCarList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MGCarList.aspx.designer.cs">
+      <DependentUpon>MGCarList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentDetails.aspx.cs">
+      <DependentUpon>PaymentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentDetails.aspx.designer.cs">
+      <DependentUpon>PaymentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceOrder.aspx.cs">
+      <DependentUpon>PlaceOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlaceOrder.aspx.designer.cs">
+      <DependentUpon>PlaceOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowOrders.aspx.cs">
+      <DependentUpon>ShowOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowOrders.aspx.designer.cs">
+      <DependentUpon>ShowOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkodaCarList.aspx.cs">
+      <DependentUpon>SkodaCarList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkodaCarList.aspx.designer.cs">
+      <DependentUpon>SkodaCarList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkodaParts.aspx.cs">
+      <DependentUpon>SkodaParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkodaParts.aspx.designer.cs">
+      <DependentUpon>SkodaParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuzukiCarList.aspx.cs">
+      <DependentUpon>SuzukiCarList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuzukiCarList.aspx.designer.cs">
+      <DependentUpon>SuzukiCarList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuzukiParts.aspx.cs">
+      <DependentUpon>SuzukiParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuzukiParts.aspx.designer.cs">
+      <DependentUpon>SuzukiParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TatacarList.aspx.cs">
+      <DependentUpon>TatacarList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TatacarList.aspx.designer.cs">
+      <DependentUpon>TatacarList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TataParts.aspx.cs">
+      <DependentUpon>TataParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TataParts.aspx.designer.cs">
+      <DependentUpon>TataParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ToyotaCarList.aspx.cs">
+      <DependentUpon>ToyotaCarList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ToyotaCarList.aspx.designer.cs">
+      <DependentUpon>ToyotaCarList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ToyotaCarParts.aspx.cs">
+      <DependentUpon>ToyotaCarParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ToyotaCarParts.aspx.designer.cs">
+      <DependentUpon>ToyotaCarParts.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.Master" />
+    <Content Include="Admin.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49696</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49696/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

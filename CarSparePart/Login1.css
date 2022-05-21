@@ -1,0 +1,22 @@
+﻿
+h2 {
+    margin: 0px;
+}
+.login {
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    padding: 80px;
+    background: white;
+    border-radius: 7px;
+}
+#TextBox1, #TextBox2 {
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 7px;
+    padding-left: 8px;
+}
+
+
+   
