@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="CarSparePart.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        .navbar{
+            background:#00c3ff;
+            background:-webkit-linear-gradient(to right,#ffff1c,#00c3ff);
+            background:linear-gradient(to right,#ffff1c,#00c3ff);
+        }
+        #Button1,#Button2,#Button3{
+            background:linear-gradient(to right,white,blue);
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="margin-left:auto;margin-right:auto">
+                <tr style="width:1200px;color:aqua;height:160px">
+                    <td>
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/AdminBanner.jpeg" BorderWidth="3px" Height="160px" Width="1200px" BorderColor="#666666" />
+                    </td>
+                </tr>
+                <tr style="border-width:8px;border-color:#666666;width:1200px;color:#666666;height:6px; background-color:#c547ff">
+                  <td>
+                      <div class="navbar">
+                          <table style="margin-left:auto;margin-right:auto">
+                              <tr style="border-color:#666666">
+                                  <td style="padding:5px" >
+                                      <asp:Button ID="Button1" runat="server" Text="Order Details" CausesValidation="False" Font-Bold="True" Font-Size="Medium" Height="49px" Width="171px" BorderColor="#666666" OnClick="Button1_Click"   />
+                                  </td>
+                                  <td style="padding:5px" >
+                                      <asp:Button ID="Button2" runat="server" Text="Payment Details" CausesValidation="False" Font-Bold="True" Font-Size="Medium" Height="49px" Width="171px" BorderColor="#666666" OnClick="Button2_Click"  />
+                                  </td>
+                                   <td style="padding:5px" >
+                                      <asp:Button ID="Button3" runat="server" Text="Logout" CausesValidation="False" Font-Bold="True" Font-Size="Medium" Height="49px" Width="171px" BorderColor="#666666" OnClick="Button3_Click"  />
+                                  </td>
+                              </tr>
+                          </table>
+                      </div>
+                  </td>
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

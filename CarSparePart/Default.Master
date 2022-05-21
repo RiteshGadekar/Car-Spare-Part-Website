@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="CarSparePart.Default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+      <style>
+            ul{
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                overflow:hidden;
+                background-color:mediumblue;
+                
+            }
+            li{
+                float:left;
+                border-right:1px solid #bbb;
+                
+            }
+            li:last-child{
+                border-right:none;
+            }
+
+            li a{
+                display:block;
+                color:white;
+                text-align:center;
+                padding:14px 60px;
+                text-decoration:none;
+                
+            }
+            li a:hover{
+                background-color:#FF6666;
+                
+            }
+        </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+      
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="margin:0 auto;">
+               
+                <tr style="width:1100px; height:50px; background-color:#5f98f3; background-color:white">
+                    <td style="width:100px">
+                        <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/images/logo.jpg" Width="120px" /></td>
+                    <td style="width:780px; text-align:center; background-color:yellow">
+                        <asp:Label ID="Label1" runat="server" Text="Car Spare Part Center" Font-Bold="True" Font-Names="Copperplate Gothic Bold" ForeColor="Blue" Font-Size="35px"></asp:Label>
+                        <br />
+                        <b>Buy spare parts at reasnable price...!</b>
+                    </td>
+                    <td style="width:220px; text-align:right">
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" Width="50px" ImageUrl="~/images/FaceBookLogo.png"/>
+                        <asp:ImageButton ID="ImageButton2" runat="server" Height="50px" Width="50px" ImageUrl="~/images/InstaLogo.jpeg"/>
+                        <asp:ImageButton ID="ImageButton3" runat="server" Height="50px" Width="50px" ImageUrl="~/images/TweeterLogo.png"/>
+                         <asp:ImageButton ID="ImageButton4" runat="server" Height="50px" Width="50px" ImageUrl="~/images/CartLogo.jpeg"/>
+                    </td>
+                   
+                                    
+                </tr>
+                <tr style="width:90px; height:40px">
+                    <td colspan="3" style="text-align:center">
+                        <ul>
+                            <li>
+                                <a class="active" href="#home">Home</a>
+              
+                            </li>
+                             <li>
+                                <a href="#home">All Product</a>
+              
+                            </li>
+                             <li>
+                                <a  href="Main.aspx">Registration</a>
+              
+                            </li>
+                             <li>
+                                <a  href="Login.aspx">User Login</a>
+              
+                            </li>
+                             <li>
+                                <a  href="#home">About Us</a>
+              
+                            </li>
+                             <li>
+                                <a  href="#home">Contact Us</a>
+              
+                            </li>
+
+                        </ul>                       
+                    </td>                   
+                </tr>
+                <tr style="width:1110px; height:310px">
+                    <td colspan="3">
+                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                            <ContentTemplate>
+                                <asp:Timer ID="Timer1" runat="server" Interval="2000" OnTick="Timer1_Tick"></asp:Timer>
+                                <asp:Image ID="Image2" runat="server" BackColor="White" BorderColor="Gray" BorderStyle="Double" Height="270px" Width="1110px" />
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                       
+                    </td>
+                </tr>
+                         <tr style="background-color:deepskyblue">
+<td colspan="3" style="text-align:right">
+    <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Bahnschrift SemiBold"></asp:Label>
+    <asp:Button ID="Button11" runat="server" Text="Log Out" BackColor="Red" BorderColor="White" Font-Bold="True" Font-Names="Comic Sans MS" ForeColor="White" Height="27px" Width="105px" OnClick="Button1_Click" />
+</td>
+               </tr>
+                <tr>
+                    <td colspan="3" >
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder >
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Footer</td>
+                </tr>
+            </table>
+            
+        </div>
+        
+    </form>
+</body>
+</html>
